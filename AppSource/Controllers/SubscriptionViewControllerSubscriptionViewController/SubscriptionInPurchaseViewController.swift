@@ -16,7 +16,7 @@ class SubscriptionInPurchaseViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("hello")
+        print("hello")  
     }
     
 
