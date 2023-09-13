@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SearchBookTableViewCell" id="KGk-i7-Jjw" customClass="SearchBookTableViewCell" customModule="projectLibrary" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="395" height="122"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="395" height="122"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sZa-c2-3gD">
+                        <rect key="frame" x="0.0" y="0.0" width="395" height="122"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bkl-Bv-ZvU">
+                                <rect key="frame" x="8" y="0.0" width="379" height="1"/>
+                                <color key="backgroundColor" name="K10B269"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="15f-im-J0m"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KPO-ha-Hgp">
+                                <rect key="frame" x="8" y="11" width="379" height="101"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image 2" translatesAutoresizingMaskIntoConstraints="NO" id="Yf8-38-oKq">
+                                        <rect key="frame" x="4" y="0.0" width="57" height="101"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TIME MAGAZINE US" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A8a-OM-lxf">
+                                        <rect key="frame" x="69" y="0.0" width="302" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                        <color key="textColor" name="K10B269"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="August 25, 2023" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jMn-nv-xpN">
+                                        <rect key="frame" x="69" y="25.999999999999996" width="98" height="14.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                        <color key="textColor" name="K343434"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        </variation>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Tq-y8-lqu">
+                                        <rect key="frame" x="274" y="30.666666666666664" width="100" height="39.999999999999993"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W1a-wf-aPD">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="40"/>
+                                                <color key="backgroundColor" name="KCCCCCC"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                <color key="tintColor" name="K343434"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Add to Library"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="W1a-wf-aPD" firstAttribute="leading" secondItem="1Tq-y8-lqu" secondAttribute="leading" id="Dcd-9f-ocC"/>
+                                            <constraint firstAttribute="height" constant="40" id="KzR-O4-lXr"/>
+                                            <constraint firstAttribute="bottom" secondItem="W1a-wf-aPD" secondAttribute="bottom" id="PFU-ob-pTK"/>
+                                            <constraint firstAttribute="width" constant="100" id="ctO-O4-CpI"/>
+                                            <constraint firstAttribute="trailing" secondItem="W1a-wf-aPD" secondAttribute="trailing" id="zDN-bf-Q2N"/>
+                                            <constraint firstItem="W1a-wf-aPD" firstAttribute="top" secondItem="1Tq-y8-lqu" secondAttribute="top" id="zEx-fO-HR8"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" name="KF2F2F2"/>
+                                <constraints>
+                                    <constraint firstItem="Yf8-38-oKq" firstAttribute="width" secondItem="KPO-ha-Hgp" secondAttribute="width" multiplier="0.15" id="3dr-zf-U83"/>
+                                    <constraint firstAttribute="bottom" secondItem="Yf8-38-oKq" secondAttribute="bottom" id="Ow1-NH-zUE"/>
+                                    <constraint firstItem="jMn-nv-xpN" firstAttribute="top" secondItem="A8a-OM-lxf" secondAttribute="bottom" constant="8" id="Ppa-9Q-tP7"/>
+                                    <constraint firstAttribute="trailing" secondItem="1Tq-y8-lqu" secondAttribute="trailing" constant="5" id="UCC-OJ-qLJ"/>
+                                    <constraint firstItem="jMn-nv-xpN" firstAttribute="leading" secondItem="A8a-OM-lxf" secondAttribute="leading" id="VZo-KE-i64"/>
+                                    <constraint firstAttribute="trailing" secondItem="A8a-OM-lxf" secondAttribute="trailing" constant="8" id="eVH-c5-Kx2"/>
+                                    <constraint firstItem="A8a-OM-lxf" firstAttribute="leading" secondItem="Yf8-38-oKq" secondAttribute="trailing" constant="8" id="fk0-3X-FSP"/>
+                                    <constraint firstItem="1Tq-y8-lqu" firstAttribute="centerY" secondItem="KPO-ha-Hgp" secondAttribute="centerY" id="gt2-sb-t02"/>
+                                    <constraint firstItem="Yf8-38-oKq" firstAttribute="leading" secondItem="KPO-ha-Hgp" secondAttribute="leading" constant="4" id="hMV-AI-Kha"/>
+                                    <constraint firstItem="Yf8-38-oKq" firstAttribute="top" secondItem="KPO-ha-Hgp" secondAttribute="top" id="hVn-ho-74i"/>
+                                    <constraint firstItem="A8a-OM-lxf" firstAttribute="top" secondItem="KPO-ha-Hgp" secondAttribute="top" id="nzC-iS-JPl"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="KPO-ha-Hgp" secondAttribute="bottom" constant="10" id="92o-tS-Dqz"/>
+                            <constraint firstItem="Bkl-Bv-ZvU" firstAttribute="leading" secondItem="sZa-c2-3gD" secondAttribute="leading" constant="8" id="EbM-xT-jRM"/>
+                            <constraint firstItem="KPO-ha-Hgp" firstAttribute="top" secondItem="Bkl-Bv-ZvU" secondAttribute="bottom" constant="10" id="Gyi-Z7-Vie"/>
+                            <constraint firstItem="KPO-ha-Hgp" firstAttribute="trailing" secondItem="Bkl-Bv-ZvU" secondAttribute="trailing" id="MQH-bY-7j6"/>
+                            <constraint firstItem="KPO-ha-Hgp" firstAttribute="leading" secondItem="Bkl-Bv-ZvU" secondAttribute="leading" id="N2b-3K-ayp"/>
+                            <constraint firstItem="Bkl-Bv-ZvU" firstAttribute="top" secondItem="sZa-c2-3gD" secondAttribute="top" id="WHk-2M-5Po"/>
+                            <constraint firstAttribute="trailing" secondItem="Bkl-Bv-ZvU" secondAttribute="trailing" constant="8" id="sBG-Vo-nNG"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="sZa-c2-3gD" secondAttribute="bottom" id="9no-OH-VNX"/>
+                    <constraint firstAttribute="trailing" secondItem="sZa-c2-3gD" secondAttribute="trailing" id="NN9-za-PLQ"/>
+                    <constraint firstItem="sZa-c2-3gD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="WHO-ew-uXU"/>
+                    <constraint firstItem="sZa-c2-3gD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="b52-qb-WmR"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="mainView" destination="KPO-ha-Hgp" id="itb-Cq-YwL"/>
+            </connections>
+            <point key="canvasLocation" x="138.1679389312977" y="19.718309859154932"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Image 2" width="75" height="91"/>
+        <namedColor name="K10B269">
+            <color red="0.063000001013278961" green="0.69800001382827759" blue="0.41200000047683716" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="K343434">
+            <color red="0.20399999618530273" green="0.20399999618530273" blue="0.20399999618530273" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="KCCCCCC">
+            <color red="0.80000001192092896" green="0.80000001192092896" blue="0.80000001192092896" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="KF2F2F2">
+            <color red="0.94900000095367432" green="0.94900000095367432" blue="0.94900000095367432" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

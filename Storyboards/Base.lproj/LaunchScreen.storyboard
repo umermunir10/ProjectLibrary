@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Splash screen imge" translatesAutoresizingMaskIntoConstraints="NO" id="9Zu-aM-kS3">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <view alpha="0.80000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ITa-PN-5RF">
+                                <rect key="frame" x="0.0" y="408.66666666666669" width="393" height="59.666666666666686"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hamqadam" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aqm-Dv-SuX">
+                                        <rect key="frame" x="102.66666666666667" y="9" width="187.66666666666663" height="42"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                        <color key="textColor" name="K10B269"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="70"/>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="KFFFFFF"/>
+                                <constraints>
+                                    <constraint firstItem="aqm-Dv-SuX" firstAttribute="centerY" secondItem="ITa-PN-5RF" secondAttribute="centerY" id="5eu-IV-Ht9"/>
+                                    <constraint firstItem="aqm-Dv-SuX" firstAttribute="centerX" secondItem="ITa-PN-5RF" secondAttribute="centerX" id="Its-3m-Tea"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="9Zu-aM-kS3" secondAttribute="bottom" id="4V2-qp-8RL"/>
+                            <constraint firstItem="9Zu-aM-kS3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Efc-bI-iKC"/>
+                            <constraint firstItem="9Zu-aM-kS3" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="GfP-wF-oBR"/>
+                            <constraint firstItem="ITa-PN-5RF" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Ihg-Yu-hWP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9Zu-aM-kS3" secondAttribute="trailing" id="QPx-sK-7zH"/>
+                            <constraint firstItem="ITa-PN-5RF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="TEl-Bc-YSJ"/>
+                            <constraint firstItem="ITa-PN-5RF" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="TqU-Fc-iGb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ITa-PN-5RF" secondAttribute="trailing" id="Wcc-w9-7Zr"/>
+                            <constraint firstItem="ITa-PN-5RF" firstAttribute="height" secondItem="9Zu-aM-kS3" secondAttribute="height" multiplier="0.07" id="cwK-9q-Ce5"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Splash screen imge" width="609" height="812"/>
+        <namedColor name="K10B269">
+            <color red="0.063000001013278961" green="0.69800001382827759" blue="0.41200000047683716" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="KFFFFFF">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

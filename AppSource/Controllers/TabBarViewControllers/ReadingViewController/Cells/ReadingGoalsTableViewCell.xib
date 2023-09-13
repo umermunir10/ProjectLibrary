@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="readingGoals" id="KGk-i7-Jjw" customClass="ReadingGoalsTableViewCell" customModule="projectLibrary" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cf2-Vy-5Z0" userLabel="CardView">
+                        <rect key="frame" x="8" y="8" width="584" height="284"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reading Goals" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NNW-7p-RZ1">
+                                <rect key="frame" x="224.66666666666669" y="10" width="134.66666666666669" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" name="K343434"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uw9-IY-bAX">
+                                <rect key="frame" x="156" y="34" width="272" height="36"/>
+                                <string key="text">Read Every day, see your stats soar and
+finish more books.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" name="KA1A1A1"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                </variation>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a2m-YQ-6nI">
+                                <rect key="frame" x="227.66666666666669" y="90" width="128.66666666666669" height="186"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today's Reading" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l15-LY-aXV">
+                                        <rect key="frame" x="4.0000000000000071" y="24" width="120.66666666666669" height="18"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <color key="textColor" name="K343434"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ovx-nH-V9r">
+                                        <rect key="frame" x="42.000000000000028" y="46" width="45" height="18"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <color key="textColor" name="K343434"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="ovx-nH-V9r" firstAttribute="centerX" secondItem="l15-LY-aXV" secondAttribute="centerX" id="6a5-O3-8IY"/>
+                                    <constraint firstItem="l15-LY-aXV" firstAttribute="centerY" secondItem="a2m-YQ-6nI" secondAttribute="centerY" constant="-60" id="bj5-Ex-1Hd"/>
+                                    <constraint firstItem="ovx-nH-V9r" firstAttribute="top" secondItem="l15-LY-aXV" secondAttribute="bottom" constant="4" id="eGB-tq-9mn"/>
+                                    <constraint firstItem="l15-LY-aXV" firstAttribute="centerX" secondItem="a2m-YQ-6nI" secondAttribute="centerX" id="hvn-5b-Y8S"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K1V-4p-MrL" userLabel="ViewReading">
+                                <rect key="frame" x="60" y="224" width="464" height="45"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Book or Magazine Available for Reading" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3U1-Uw-rpc">
+                                        <rect key="frame" x="124.66666666666667" y="29" width="214.66666666666663" height="12"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="10"/>
+                                        <color key="textColor" name="KFFFFFF"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nothing to Read" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mgt-X5-58C">
+                                        <rect key="frame" x="173.33333333333334" y="11" width="117.33333333333334" height="18"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <color key="textColor" name="KFFFFFF"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                        </variation>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5DJ-gR-0vM">
+                                        <rect key="frame" x="0.0" y="0.0" width="464" height="45"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" name="K10B269"/>
+                                <constraints>
+                                    <constraint firstItem="mgt-X5-58C" firstAttribute="top" secondItem="K1V-4p-MrL" secondAttribute="top" constant="11" id="5md-Qu-irY"/>
+                                    <constraint firstItem="5DJ-gR-0vM" firstAttribute="leading" secondItem="K1V-4p-MrL" secondAttribute="leading" id="9P0-kh-AJC"/>
+                                    <constraint firstAttribute="bottom" secondItem="5DJ-gR-0vM" secondAttribute="bottom" id="Kty-mM-Pn6"/>
+                                    <constraint firstAttribute="bottom" secondItem="3U1-Uw-rpc" secondAttribute="bottom" constant="4" id="N96-F3-fJw"/>
+                                    <constraint firstItem="mgt-X5-58C" firstAttribute="centerX" secondItem="3U1-Uw-rpc" secondAttribute="centerX" id="TD4-sO-sgZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="5DJ-gR-0vM" secondAttribute="trailing" id="WYw-6W-j3H"/>
+                                    <constraint firstItem="5DJ-gR-0vM" firstAttribute="top" secondItem="K1V-4p-MrL" secondAttribute="top" id="aRT-k8-GvH"/>
+                                    <constraint firstItem="3U1-Uw-rpc" firstAttribute="centerX" secondItem="K1V-4p-MrL" secondAttribute="centerX" id="cc6-U5-lp3"/>
+                                    <constraint firstItem="3U1-Uw-rpc" firstAttribute="top" secondItem="mgt-X5-58C" secondAttribute="bottom" id="kvv-cj-h7W"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="K1V-4p-MrL" firstAttribute="leading" secondItem="cf2-Vy-5Z0" secondAttribute="leading" constant="60" id="ACg-pQ-SGa"/>
+                            <constraint firstItem="Uw9-IY-bAX" firstAttribute="top" secondItem="NNW-7p-RZ1" secondAttribute="bottom" id="Cin-Zf-3z2"/>
+                            <constraint firstItem="a2m-YQ-6nI" firstAttribute="top" secondItem="Uw9-IY-bAX" secondAttribute="bottom" constant="20" id="HFo-4c-YeX"/>
+                            <constraint firstAttribute="bottom" secondItem="a2m-YQ-6nI" secondAttribute="bottom" constant="8" id="VEa-HK-yeb"/>
+                            <constraint firstItem="Uw9-IY-bAX" firstAttribute="centerX" secondItem="NNW-7p-RZ1" secondAttribute="centerX" id="YiU-ks-QxP"/>
+                            <constraint firstItem="a2m-YQ-6nI" firstAttribute="centerX" secondItem="cf2-Vy-5Z0" secondAttribute="centerX" id="Yne-Ja-OyA"/>
+                            <constraint firstItem="a2m-YQ-6nI" firstAttribute="width" secondItem="cf2-Vy-5Z0" secondAttribute="width" multiplier="0.22" id="axY-Hd-Ydy"/>
+                            <constraint firstItem="NNW-7p-RZ1" firstAttribute="centerX" secondItem="cf2-Vy-5Z0" secondAttribute="centerX" id="c5K-dk-3y9"/>
+                            <constraint firstItem="NNW-7p-RZ1" firstAttribute="top" secondItem="cf2-Vy-5Z0" secondAttribute="top" constant="10" id="pRo-vx-cFy"/>
+                            <constraint firstAttribute="trailing" secondItem="K1V-4p-MrL" secondAttribute="trailing" constant="60" id="r0e-Ji-8pD"/>
+                            <constraint firstAttribute="bottom" secondItem="K1V-4p-MrL" secondAttribute="bottom" constant="15" id="rIi-zE-LhF"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" name="KF2F2F2"/>
+                <color key="tintColor" name="KF2F2F2"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="cf2-Vy-5Z0" secondAttribute="trailing" constant="8" id="1Fd-ag-9DX"/>
+                    <constraint firstItem="cf2-Vy-5Z0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="2ud-Rh-BOG"/>
+                    <constraint firstAttribute="bottom" secondItem="cf2-Vy-5Z0" secondAttribute="bottom" constant="8" id="76N-LT-nDH"/>
+                    <constraint firstItem="cf2-Vy-5Z0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="FYm-pa-MY1"/>
+                    <constraint firstItem="K1V-4p-MrL" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.15" id="JDJ-Gj-KRQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="tintColor" name="KF2F2F2"/>
+            <connections>
+                <outlet property="cardView" destination="cf2-Vy-5Z0" id="u3c-GN-LgQ"/>
+                <outlet property="viewReading" destination="K1V-4p-MrL" id="P4D-re-Xur"/>
+            </connections>
+            <point key="canvasLocation" x="25.954198473282442" y="19.718309859154932"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="K10B269">
+            <color red="0.063000001013278961" green="0.69800001382827759" blue="0.41200000047683716" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="K343434">
+            <color red="0.20399999618530273" green="0.20399999618530273" blue="0.20399999618530273" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="KA1A1A1">
+            <color red="0.63099998235702515" green="0.63099998235702515" blue="0.63099998235702515" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="KF2F2F2">
+            <color red="0.94900000095367432" green="0.94900000095367432" blue="0.94900000095367432" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="KFFFFFF">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
